@@ -22,9 +22,9 @@ function countFlavor(froyo) {
     const count = {};
     for (const amount of flavors) {
         if (amount in count) {
-            count [flavor] += 1;
+            count [flavors] += 1;
         } else {
-            count[flavor] = 1;
+            count[flavors] = 1;
         }
     }
     return count;
