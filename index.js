@@ -1,9 +1,9 @@
  const flavorFroyo = prompt("Enter a list of froyo flavors (seperate by commas):",
     "vanilla,vanilla,vanilla,strawberry,coffee,coffee"
  );
-console.log("User input:", flavorFroyo);
 const flavors = flavorFroyo.split(",");
 console.log("Flavor array:", flavors);
+console.table("User input:", flavorFroyo);
 
 function count(flavors) {
     const count = {};
