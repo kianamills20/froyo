@@ -4,14 +4,16 @@
 const flavors = flavorFroyo.split(",");
 console.log("Flavor array:", flavors);
 console.table("User input:", flavorFroyo);
+const flavorCount = count(flavorFroyo);
 
-function count(flavors) {
+function count(arr) {
     const count = {};
-    for (const amount of flavors) {
-        if (amount in count) {
-            count[amount] += 1;
+    for (let i = 0; i < arr.length; i++) {
+        const flavor = arr[i];
+        if (flavor in count) {
+            count[flavor] += 1;
         } else {
-            count[amount] = 1;
+            count[flavor] = 1;
         }
     }
     return count;
@@ -19,12 +21,13 @@ function count(flavors) {
 
 
 function countFlavor(froyo) {
-    const count = {};
-    for (const amount of flavors) {
-        if (amount in count) {
-            count [flavors] += 1;
+      const count = {};
+    for (let i = 0; i < arr.length; i++) {
+        const flavor = arr[i];
+        if (flavor in count) {
+            count[flavor] += 1;
         } else {
-            count[flavors] = 1;
+            count[flavor] = 1;
         }
     }
     return count;
